@@ -5,7 +5,14 @@ import (
 	"sort"
 )
 
-// StringSet
+// No repeat string array
+//
+// StringSet is reference type, can directly for function argment and
+// should be initialize by NewStringSet()
+//
+// eg:
+//
+//	myDB := strpkg.NewStringSet()
 type StringSet struct {
 	container map[string]byte
 }
